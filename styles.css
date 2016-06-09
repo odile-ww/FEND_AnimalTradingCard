@@ -1,27 +1,28 @@
 /* general styles for the page */
 body {
-    font-family: 'Cabin', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #003366;
+    font: 13px 'Cabin', Helvetica, Arial, sans-serif;
+    color: #036;
     padding: 0;
     margin: 0;
 }
 
 /* Styles for the div which encapsulates all other elements on the page: max-width based on the picture's size (including padding and borders) & border styles */
-.container {
+.card {
     width: 322px;
+    margin-top: 10px;
     padding: 10px;
-    border: 0.5px solid #99CC99;
+    border: 0.5px solid #9c9;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* title styles, including space between it and next element */
 h3 {
     font-family: 'Lobster', cursive;
-    color: #993300;
-    border-bottom: solid 0.5px #99CC99;
+    color: #930;
+    border-bottom: solid 0.5px #9c9;
     border-radius: 20% 0;
     padding: 10px;
+    margin-top: 0;
 }
 
 /* set image's maximum indicated width & space between it and the other elements */
@@ -33,30 +34,25 @@ img {
 /*information box */
 .text {
     padding: 10px;
-    border: 0.5px solid #99CC99;
+    border: 0.5px solid #9c9;
     border-radius: 10% 0;
-    overflow: auto; /* keeps the child div from spilling out of the container */
 }
 
 /*remove bullets from the list items and move the text a bit to the right */
 ul {
     list-style: none;
     padding-left: 10px;
+    font-style: italic;
 }
 
 /*list labels -- should be bold */
-li span {
+span {
     font-weight: bold;
-}
-
-.sources {
-    float: right;
-    font-size: 12px;
 }
 
 a:link,
 a:hover,
 a:visited,
 a:active {
-    color: #99CC99;
+    color: #9c9;
 }
